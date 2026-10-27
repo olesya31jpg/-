@@ -1,0 +1,212 @@
+key-1: value
+Name: Olesya
+Age 16
+list_1: [1,4,6,8]
+list_2:
+-1
+-4
+-6
+-8
+slovar: {"papa"; "vova", "age": 55}
+
+
+
+project:
+  name: "Строительство частного дома"
+  address: "Московская обл., г. Химки, ул. Примерная, 10"
+  start_date: "2026-11-01"
+  planned_end_date: "2027-06-30"
+  total_budget_rub: 4850000
+materials:
+  - id: M01
+    name: "Кирпич керамический полнотелый"
+    quantity: 25000
+    unit: "шт"
+    price_per_unit: 18
+    total: 450000
+    supplier: "ООО «СтройБаза»"
+    delivery_days: 7
+    quality_grade: "М150"
+
+  - id: M02
+    name: "Цемент ПЦ 500 Д0"
+    quantity: 120
+    unit: "мешок 50 кг"
+    price_per_unit: 450
+    total: 54000
+    supplier: "АО «ЦементГрупп»"
+    delivery_days: 3
+    quality_grade: "ПЦ 500 Д0"
+
+  - id: M03
+    name: "Песок строительный намывной"
+    quantity: 40
+    unit: "м³"
+    price_per_unit: 1200
+    total: 48000
+    supplier: "ООО «НерудТорг»"
+    delivery_days: 2
+    quality_grade: "ГОСТ 8736-2014"
+
+  - id: M04
+    name: "Щебень гранитный фракции 5-20"
+    quantity: 30
+    unit: "м³"
+    price_per_unit: 1800
+    total: 54000
+    supplier: "ООО «НерудТорг»"
+    delivery_days: 2
+    quality_grade: "М1200"
+
+  - id: M05
+    name: "Арматура рифлёная А500С Ø12"
+    quantity: 3.5
+    unit: "т"
+    price_per_unit: 62000
+    total: 217000
+    supplier: "ООО «МеталлСнаб»"
+    delivery_days: 5
+    quality_grade: "А500С"
+
+  - id: M06
+    name: "Плиты перекрытия ПК 60-12"
+    quantity: 24
+    unit: "шт"
+    price_per_unit: 14500
+    total: 348000
+    supplier: "ЖБИ «БетонСтрой»"
+    delivery_days: 10
+    quality_grade: "ГОСТ 9561-2016"
+
+  - id: M07
+    name: "Бетон товарный B22.5 (М300)"
+    quantity: 45
+    unit: "м³"
+    price_per_unit: 5200
+    total: 234000
+    supplier: "ООО «БетонГрупп»"
+    delivery_days: 1
+    quality_grade: "B22.5 W6 F150"
+
+  - id: M08
+    name: "Газобетонные блоки D500 600×300×200"
+    quantity: 1200
+    unit: "шт"
+    price_per_unit: 180
+    total: 216000
+    supplier: "ООО «Газобетон-М»"
+    delivery_days: 7
+    quality_grade: "D500 B2.5"
+
+  - id: M09
+    name: "Пиломатериалы (доска обрезная 50×150×6000)"
+    quantity: 8
+    unit: "м³"
+    price_per_unit: 16000
+    total: 128000
+    supplier: "ООО «ЛесТорг»"
+    delivery_days: 4
+    quality_grade: "1 сорт, ГОСТ 8486-86"
+
+  - id: M10
+    name: "Кровельный металлочерепица «Монтеррей»"
+    quantity: 180
+    unit: "м²"
+    price_per_unit: 650
+    total: 117000
+    supplier: "ООО «КровляПро»"
+    delivery_days: 6
+    quality_grade: "0.5 мм, полиэстер"
+
+  - id: M11
+    name: "Минеральная вата (утеплитель) 150 мм"
+    quantity: 200
+    unit: "м²"
+    price_per_unit: 480
+    total: 96000
+    supplier: "ООО «ИзоТепло»"
+    delivery_days: 5
+    quality_grade: "П-75, ГОСТ 9573-2012"
+
+  - id: M12
+    name: "Окна ПВХ двухкамерные (с монтажом)"
+    quantity: 14
+    unit: "шт"
+    price_per_unit: 18500
+    total: 259000
+    supplier: "ООО «ОкнаДом»"
+    delivery_days: 14
+    quality_grade: "профиль 70 мм, 2-кам."
+works:
+  - id: W01
+    type: "Земляные работы и фундамент"
+    workers: [EMP01, EMP03]
+    materials: [M02, M03, M04, M05, M07]
+    duration_days: 30
+    cost_rub: 620000
+    status: "запланировано"
+
+  - id: W02
+    type: "Кладка стен и монтаж перекрытий"
+    workers: [EMP01, EMP02]
+    materials: [M01, M02, M03, M06, M08]
+    duration_days: 45
+    cost_rub: 850000
+    status: "запланировано"
+
+  - id: W03
+    type: "Устройство кровли"
+    workers: [EMP02, EMP03]
+    materials: [M09, M10, M11]
+    duration_days: 20
+    cost_rub: 380000
+    status: "запланировано"
+
+  - id: W04
+    type: "Монтаж окон и утепление фасада"
+    workers: [EMP02, EMP03]
+    materials: [M11, M12]
+    duration_days: 15
+    cost_rub: 295000
+    status: "запланировано"
+
+  - id: W05
+    type: "Внутренняя отделка и стяжка"
+    workers: [EMP01, EMP02, EMP03]
+    materials: [M02, M03, M07]
+    duration_days: 40
+    cost_rub: 540000
+    status: "запланировано"
+workers:
+  - id: EMP01
+    full_name: "Иванов Иван Иванович"
+    position: "Прораб"
+    qualification: "Высшее строительное, инженер-строитель"
+    grade: "высшая категория"
+    experience_years: 15
+    hourly_rate_rub: 1200
+    employment: "полная занятость (8 ч/день, 5 дн/нед)"
+    responsibility: "Общее руководство, фундамент, кладка, отделка"
+    contact: "+7 (900) 111-22-33"
+
+  - id: EMP02
+    full_name: "Петров Пётр Сергеевич"
+    position: "Каменщик-кровельщик"
+    qualification: "Среднее специальное, каменщик 5 разряда"
+    grade: "5 разряд"
+    experience_years: 8
+    hourly_rate_rub: 750
+    employment: "полная занятость (8 ч/день, 5 дн/нед)"
+    responsibility: "Кладка стен, монтаж перекрытий, кровля, окна"
+    contact: "+7 (900) 222-33-44"
+
+  - id: EMP03
+    full_name: "Сидоров Алексей Николаевич"
+    position: "Разнорабочий-бетонщик"
+    qualification: "Среднее профессиональное, бетонщик 3 разряда"
+    grade: "3 разряд"
+    experience_years: 4
+    hourly_rate_rub: 500
+    employment: "частичная занятость (6 ч/день, 5 дн/нед)"
+    responsibility: "Земляные работы, бетонирование, утепление, подсобные работы"
+    contact: "+7 (900) 333-44-55"
